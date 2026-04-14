@@ -344,9 +344,9 @@ Webhooks - Real-time notifications
 👨‍💻 Author
 Yaswanth Rajana
 
-GitHub: yourusername
+GitHub: Yaswanth-rajana
 
-Project Link: https://github.com/yourusername/ladderai
+Project Link: https://github.com/Yaswanth-rajana/ladderai.git
 
 📄 License
 MIT License - See LICENSE file for more information
