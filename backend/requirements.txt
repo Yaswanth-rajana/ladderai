@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pdfplumber==0.10.3
+pytesseract==0.3.10
+pdf2image==1.16.3
+Pillow==10.1.0
+camelot-py[cv]==0.11.0
+opencv-python==4.8.1.78
+pymongo==4.5.0  (if using MongoDB - change if using PostgreSQL)
+sqlalchemy==2.0.23 (if using SQLite/PostgreSQL)
+python-dotenv==1.0.0
