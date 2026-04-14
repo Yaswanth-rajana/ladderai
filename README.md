@@ -48,13 +48,13 @@ Python 3.9 or higher
 pip (Python package manager)
 Modern web browser (Chrome, Firefox, Safari)
 
-nstallation
-1. Clone the repository
+Installation
+Clone the repository
 
+bash
 git clone https://github.com/yourusername/ladderai.git
 cd ladderAI
-
-2. Setup Backend
+Setup Backend
 
 bash
 cd backend
@@ -62,12 +62,12 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 The backend will run at http://localhost:8000
 
-3. Setup Frontend (Open new terminal)
+Setup Frontend (Open new terminal)
 
 bash
 cd frontend
 python -m http.server 3000
-4. Open Application
+Open Application
 
 Navigate to http://localhost:3000 in your browser
 
@@ -82,14 +82,14 @@ DATABASE_URL=sqlite:///./invoices.db
 MAX_FILE_SIZE_MB=10
 USE_OCR_FALLBACK=true
 📡 API Endpoints
-Method	Endpoint	Description	Request	Response
-POST	/documents/upload	Upload single PDF	file: PDF	{document_id, status}
-POST	/documents/upload/bulk	Upload multiple PDFs	files: [PDFs]	{documents: [...]}
-GET	/documents/	List all invoices	-	[{document}, ...]
-GET	/documents/{id}	Get invoice details	-	{extracted_data, confidence, ...}
-POST	/documents/reprocess/{id}	Reprocess invoice	-	{message, document_id}
-GET	/documents/stats/summary	System statistics	-	{total, success_rate, ...}
-GET	/health	Health check	-	{status: "ok"}
+Method	Endpoint	Description
+POST	/documents/upload	Upload single PDF
+POST	/documents/upload/bulk	Upload multiple PDFs
+GET	/documents/	List all invoices
+GET	/documents/{id}	Get invoice details
+POST	/documents/reprocess/{id}	Reprocess invoice
+GET	/documents/stats/summary	System statistics
+GET	/health	Health check
 API Response Example
 json
 {
@@ -110,7 +110,9 @@ json
   "processing_time_ms": 16.10,
   "pages": 1
 }
+
 📊 Extraction Fields
+
 Field	Type	Description	Example
 vendor_name	string	Company/vendor name	"Acme Corporation"
 invoice_number	string	Invoice/Bill ID	"INV-2024-001"
@@ -192,6 +194,7 @@ json
   "processing_time_ms": 16.10,
   "pages": 1
 }
+
 Invoice with Validation Errors (85% Confidence)
 json
 {
@@ -338,19 +341,12 @@ Email Ingestion - Auto-process from email
 
 Webhooks - Real-time notifications
 
-🤝 Contributing
-Fork the repository
-
-Create feature branch (git checkout -b feature/amazing)
-
-Commit changes (git commit -m 'Add amazing feature')
-
-Push to branch (git push origin feature/amazing)
-
-Open Pull Request
-
-📄 License
-MIT License - See LICENSE file for details
-
 👨‍💻 Author
 Yaswanth Rajana
+
+GitHub: yourusername
+
+Project Link: https://github.com/yourusername/ladderai
+
+📄 License
+MIT License - See LICENSE file for more information
